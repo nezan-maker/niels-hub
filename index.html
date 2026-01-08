@@ -132,7 +132,8 @@
                 At the lowest layers of computing, abstraction is not an excuse for inefficiency. Every instruction
                 matters.
                 Every
-                cache miss has a cost. Every unnecessary context switch is a failure of design. Our work begins where
+                cache miss has a cost. Every unnecessary context switch is a failure of design. Our work begins
+                where
                 most
                 software
                 ends — at the boundary between silicon and logic.
@@ -140,7 +141,8 @@
                 We design and build operating systems, kernels, and runtime environments with a deep respect for
                 hardware
                 behavior.
-                From analyzing compiler output and assembly paths to tuning memory layouts and interrupt handling, our
+                From analyzing compiler output and assembly paths to tuning memory layouts and interrupt handling,
+                our
                 approach
                 is
                 rooted in determinism, predictability, and control.
@@ -174,143 +176,149 @@
 
         </div>
     </div>
-    <div class="capabilities" id="capabilities">
-        <h1>Capabilities</h1>
-        <h2 class="engen">Engineering Reliable Systems at the Lowest Level</h2>
-        <div class="kernel">
-            <div class="svg-cli">
-                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="lucide lucide-layers-icon lucide-layers">
-                    <path
-                        d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z" />
-                    <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12" />
-                    <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17" />
-                </svg>
+    </div>
+    <div>
+        <div class="capabilities" id="capabilities">
+            <h1>Capabilities</h1>
+            <h2 class="engen">Engineering Reliable Systems at the Lowest Level</h2>
+            <div class="kernel">
+                <div class="svg-cli">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-layers-icon lucide-layers">
+                        <path
+                            d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z" />
+                        <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12" />
+                        <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17" />
+                    </svg>
+                </div>
+                <h2>Kernel Architecture & Design</h2>
+                <p>
+                    We design purpose-built kernels tailored to specific operational requirements. Our work spans:
+
+                    Lightweight microkernels for embedded and IoT environments
+
+                    High-performance monolithic kernels for specialized workstations
+
+                    Hybrid designs balancing modularity and execution speed
+
+                    Each kernel is engineered with strict control over memory, scheduling, and interrupt paths to ensure
+                    low
+                    latency
+                    and
+                    predictable behavior.
+                </p>
+
             </div>
-            <h2>Kernel Architecture & Design</h2>
-            <p>
-                We design purpose-built kernels tailored to specific operational requirements. Our work spans:
+            <div class="low-level">
+                <div class="svg-cli">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-activity-icon lucide-activity">
+                        <path
+                            d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2" />
+                    </svg>
+                </div>
+                <h2>Low-Level Optimization & Performance Engineering</h2>
 
-                Lightweight microkernels for embedded and IoT environments
 
-                High-performance monolithic kernels for specialized workstations
+                <p>
+                    We optimize at the instruction level: <br>
 
-                Hybrid designs balancing modularity and execution speed
+                    Assembly analysis to eliminate redundant operations
 
-                Each kernel is engineered with strict control over memory, scheduling, and interrupt paths to ensure low
-                latency
-                and
-                predictable behavior.
-            </p>
+                    Cache-aware memory layouts and data structures
 
-        </div>
-        <div class="low-level">
-            <div class="svg-cli">
-                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="lucide lucide-activity-icon lucide-activity">
-                    <path
-                        d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2" />
-                </svg>
+                    Reduced syscall overhead and minimized context switching
+
+                    The result is software that respects the hardware pipeline and performs consistently under load.
+                </p>
             </div>
-            <h2>Low-Level Optimization & Performance Engineering</h2>
+            <div class="driver">
+                <div class="svg-cli">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-plug-icon lucide-plug">
+                        <path d="M12 22v-5" />
+                        <path d="M15 8V2" />
+                        <path d="M17 8a1 1 0 0 1 1 1v4a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1z" />
+                        <path d="M9 8V2" />
+                    </svg>
+                </div>
+                <h2>Driver Development & Hardware Abstraction Layers</h2>
+                <p>
+                    We build robust, deterministic drivers and HALs that bridge software with proprietary or specialized
+                    hardware:
+
+                <ul>
+                    <li>Direct register-level interaction
+                    </li>
+                    <li>Predictable I/O behavior</li>
+
+                    <li>Minimal abstraction overhead </li>
+                </ul>
+                Our interfaces are designed for long-term maintainability without sacrificing performance.
+
+                </p>
 
 
-            <p>
-                We optimize at the instruction level: <br>
-
-                Assembly analysis to eliminate redundant operations
-
-                Cache-aware memory layouts and data structures
-
-                Reduced syscall overhead and minimized context switching
-
-                The result is software that respects the hardware pipeline and performs consistently under load.
-            </p>
-        </div>
-        <div class="driver">
-            <div class="svg-cli">
-                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="lucide lucide-plug-icon lucide-plug">
-                    <path d="M12 22v-5" />
-                    <path d="M15 8V2" />
-                    <path d="M17 8a1 1 0 0 1 1 1v4a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1z" />
-                    <path d="M9 8V2" />
-                </svg>
             </div>
-            <h2>Driver Development & Hardware Abstraction Layers</h2>
-            <p>
-                We build robust, deterministic drivers and HALs that bridge software with proprietary or specialized
-                hardware:
+            <div class="real-time">
+                <div class="svg-cli">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-clock-icon lucide-clock">
+                        <path d="M12 6v6l4 2" />
+                        <circle cx="12" cy="12" r="10" />
+                    </svg>
+                </div>
+                <h2> Real-Time & Deterministic Systems</h2>
 
-            <ul>
-                <li>Direct register-level interaction
-                </li>
-                <li>Predictable I/O behavior</li>
+                <p>
+                    We engineer real-time systems with guaranteed timing constraints: <br>
+                <ul>
+                    <li>Bounded interrupt latency</li>
 
-                <li>Minimal abstraction overhead </li>
-            </ul>
-            Our interfaces are designed for long-term maintainability without sacrificing performance.
+                    <li>Deterministic scheduling policies </li>
 
-            </p>
+                    <li>Precise control over execution paths</li>
+                </ul>
 
+                These systems are suitable for robotics, aerospace guidance, and industrial automation where timing
+                failures
+                are
+                unacceptable.
 
-        </div>
-        <div class="real-time">
-            <div class="svg-cli">
-                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="lucide lucide-clock-icon lucide-clock">
-                    <path d="M12 6v6l4 2" />
-                    <circle cx="12" cy="12" r="10" />
-                </svg>
+                </p>
+
             </div>
-            <h2> Real-Time & Deterministic Systems</h2>
+            <div class="security">
+                <div class="svg-cli">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-shield-check-icon lucide-shield-check">
+                        <path
+                            d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                        <path d="m9 12 2 2 4-4" />
+                    </svg>
+                </div>
+                <h2> Security at the Lowest Level</h2>
 
-            <p>
-                We engineer real-time systems with guaranteed timing constraints: <br>
-            <ul>
-                <li>Bounded interrupt latency</li>
 
-                <li>Deterministic scheduling policies </li>
+                Security is enforced where it matters most: <br>
+                <ul>
+                    <li>Ring-0 security mechanisms</li>
 
-                <li>Precise control over execution paths</li>
-            </ul>
+                    <li>Secure boot chains and trusted initialization</li>
+                    <li>Sandboxed memory models and privilege separation </li>
+                </ul>
+                By embedding security directly into the kernel and boot process, we reduce attack surfaces and
+                strengthen
+                system
+                integrity from power-on to runtime.
 
-            These systems are suitable for robotics, aerospace guidance, and industrial automation where timing failures
-            are
-            unacceptable.
 
-            </p>
-
-        </div>
-        <div class="security">
-            <div class="svg-cli">
-                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="lucide lucide-shield-check-icon lucide-shield-check">
-                    <path
-                        d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
-                    <path d="m9 12 2 2 4-4" />
-                </svg>
             </div>
-            <h2> Security at the Lowest Level</h2>
-
-
-            Security is enforced where it matters most: <br>
-            <ul>
-                <li>Ring-0 security mechanisms</li>
-
-                <li>Secure boot chains and trusted initialization</li>
-                <li>Sandboxed memory models and privilege separation </li>
-            </ul>
-            By embedding security directly into the kernel and boot process, we reduce attack surfaces and strengthen
-            system
-            integrity from power-on to runtime.
-
-
         </div>
     </div>
     <footer class="footer">

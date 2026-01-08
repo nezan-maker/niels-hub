@@ -8,7 +8,6 @@ const observer = new IntersectionObserver((entries) => {
         }
     })
 }, {
-    threshold: 0.1
 })
 const element = document.querySelectorAll(".card")
 element.forEach((el) => observer.observe(el))

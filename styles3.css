@@ -59,4 +59,9 @@ textarea {
     border: 2px solid #131325;
     font-family: "Inter", sans-serif;
     font-size: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+#submit:hover {
+    box-shadow: 0 0 5px 5px rgb(4, 171, 237);
 }

@@ -34,7 +34,7 @@ h1 {
 }
 
 .image {
-    width: 900px;
+    width: 50%;
     height: 500px;
     border-radius: 20px;
     margin-bottom: 50px;
@@ -617,7 +617,7 @@ textarea {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 40px;
-    max-width: 1200px;
+    max-width: 80%;
     margin: 0 auto;
 }
 
@@ -666,4 +666,82 @@ textarea {
     text-align: center;
     font-size: 13px;
     color: #8b949e;
+}
+
+@media(max-width:700px) {
+    .footer-container {
+        max-width: 10%;
+    }
+
+    .kernel {
+        font-size: 15px;
+        height: 500px;
+    }
+
+    .kernel h2 {
+        font-size: 1em;
+    }
+
+    .low-level {
+        font-size: 15px;
+        height: 500px;
+    }
+
+    .low-level h2 {
+        font-size: 1em;
+    }
+
+    .driver {
+        font-size: 15px;
+        height: 500px;
+    }
+
+    .driver h2 {
+        font-size: 1em;
+    }
+
+    .real-time {
+        font-size: 15px;
+        height: 500px;
+    }
+
+    .real-time h2 {
+        font-size: 1em;
+    }
+
+    .security {
+        font-size: 15px;
+        height: 500px;
+    }
+
+    .security h2 {
+        font-size: 1em;
+    }
+
+    .engen {
+        font-size: 0.5em;
+    }
+
+    h1 {
+        font-size: 1em;
+        ;
+    }
+
+    .performance {
+        font-size: 15px;
+        height: 500px;
+    }
+
+    .performance h2 {
+        font-size: 1em;
+    }
+
+    .optimization {
+        font-size: 15px;
+        height: 500px;
+    }
+
+    .optimization h2 {
+        font-size: 1em;
+    }
 }

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Hegarty&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #131325;
+
+    color: #39FF14;
+    font-family: "DM Sans", sans-serif;
+    font-size: 2em;
+    gap: 2em;
+}
+
+.last {
+    display: flex;
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    color: #39FF14;
+    font-size: 20px;
+    padding: 50px;
+    border: 4px solid rgba(255, 255, 255, 0.477);
+    border-radius: 20px;
+
+}
+
+input {
+    width: 100%;
+    height: 3vh;
+    border-radius: 50px;
+    color: white;
+    font-family: "Inter", sans-serif;
+    background-color: black;
+    border: 3px solid rgba(255, 255, 255, 0.327);
+}
+
+.inner {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    color: white;
+    font-family: "Inter", sans-serif;
+    background-color: black;
+    border: 3px solid rgba(255, 255, 255, 0.327);
+}
+
+#submit {
+    width: 30%;
+    border-radius: 5px;
+    height: 50px;
+    background-color: rgb(4, 171, 237);
+    color: black;
+    border: 2px solid #131325;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+}

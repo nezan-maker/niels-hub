@@ -276,7 +276,7 @@ h2 {
     color: white;
     font-size: 20px;
     width: 50%;
-    height: 300px;
+    height: 350px;
     justify-content: left;
     align-items: left;
     background-color: black;
@@ -306,7 +306,7 @@ h2 {
     color: white;
     font-size: 20px;
     width: 50%;
-    height: 300px;
+    height: 350px;
     justify-content: left;
     align-items: left;
     background-color: black;
@@ -677,7 +677,124 @@ textarea {
     color: #8b949e;
 }
 
-@media(max-width:600px) {
+
+@media (max-width:479px) {
+    .performance {
+        width: 80%;
+        height: 450px;
+        font-size: 12px;
+
+    }
+
+    .optimization {
+        width: 80%;
+        height: 450px;
+        font-size: 12px;
+    }
+
+    .kernel {
+        width: 80%;
+        height: 450px;
+        font-size: 12px;
+    }
+
+    .low-level {
+        width: 80%;
+        height: 450px;
+        font-size: 12px;
+    }
+
+    .driver {
+        width: 80%;
+        height: 450px;
+        font-size: 12px;
+    }
+
+    .real-time {
+        width: 80%;
+        height: 450px;
+        font-size: 12px;
+    }
+
+    .security {
+        width: 80%;
+        height: 450px;
+        font-size: 12px;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .card1 {
+        width: 80%;
+    }
+
+    .card2 {
+        width: 80%;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .image {
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    .lif {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .hero-text {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .log {
+        opacity: 0;
+        position: absolute;
+    }
+
+    nav {
+        height: 5vh;
+        border-radius: 5px;
+    }
+
+    nav a {
+        font-size: 14px;
+        background: transparent;
+    }
+
+    nav a:hover {
+        color: gold;
+    }
+
+    .link {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0.05%;
+    }
+}
+
+
+@media(min-width:480px) and (max-width:600px) {
     .footer-container {
         max-width: 10%;
     }
@@ -739,6 +856,7 @@ textarea {
     .performance {
         font-size: 15px;
         height: 500px;
+        width: 60%;
     }
 
     .performance h2 {
@@ -748,6 +866,7 @@ textarea {
     .optimization {
         font-size: 15px;
         height: 500px;
+        width: 60%;
     }
 
     .optimization h2 {
@@ -788,6 +907,7 @@ textarea {
 
     .lif {
         font-size: 1em;
+        text-align: center;
     }
 
     .em {
@@ -796,6 +916,11 @@ textarea {
 
     nav a:hover {
         transform: scale(1);
+    }
+
+    .log {
+        position: absolute;
+        opacity: 0;
     }
 
     .link {
@@ -820,12 +945,14 @@ textarea {
 
     .performance {
         width: 85%;
-        height: 425px;
+        height: 450px;
+        font-size: 18px;
     }
 
     .optimization {
         width: 85%;
         height: 450px;
+        font-size: 18px;
     }
 
     h1 {
@@ -838,23 +965,125 @@ textarea {
 
     .kernel {
         width: 85%;
+        height: 500px;
+        font-size: 18px;
 
     }
 
     .low-level {
         width: 85%;
+        height: 500px;
+        font-size: 18px;
     }
 
     .driver {
         width: 85%;
+        height: 500px;
+        font-size: 18px;
     }
 
     .real-time {
         width: 85%;
+        height: 500px;
+        font-size: 18px;
     }
 
     .security {
         width: 85%;
+        height: 500px;
+        font-size: 18px;
     }
 
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 1fr);
+    }
+
+    .log {
+        opacity: 0;
+        position: absolute;
+    }
+
+    .link {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav a {
+        list-style: none;
+        color: darkblue;
+        background-color: transparent;
+        border: 1px solid transparent;
+    }
+
+    nav a:hover {
+        transform: scale(1);
+        background-color: skyblue;
+
+    }
+
+    .image {
+        height: 250px;
+        width: 60%;
+    }
+
+
+}
+
+@media (min-width:1281px) and (max-width:1510px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .performance {
+        width: 80%;
+    }
+
+    .optimization {
+        width: 80%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 350px;
+    }
+
+    nav a {
+        list-style: none;
+        color: darkblue;
+        background-color: transparent;
+        border: 1px solid transparent;
+    }
+
+    nav a:hover {
+        transform: scale(1);
+        background-color: skyblue;
+
+    }
+
+    .link {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
 }

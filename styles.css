@@ -196,7 +196,7 @@ h1 {
 nav {
     width: 98%;
     align-self: right;
-    background: #0b0e14;
+    background: #1d1d38;
     height: 10vh;
     margin-bottom: 20px;
     display: flex;
@@ -208,7 +208,7 @@ nav {
     padding-right: 0.5%;
     gap: 60%;
     border-radius: 20px;
-    border: 2px solid rgba(255, 255, 255, 0.269);
+    /*border: 2px solid rgba(255, 255, 255, 0.269);*/
 }
 
 nav a {
@@ -691,46 +691,46 @@ textarea {
 
 @media (max-width:479px) {
     .performance {
-        width: 80%;
-        height: 450px;
-        font-size: 12px;
+        width: 90%;
+        height: 500px;
+        font-size: 14px;
 
     }
 
     .optimization {
-        width: 80%;
-        height: 450px;
-        font-size: 12px;
+        width: 90%;
+        height: 500px;
+        font-size: 14px;
     }
 
     .kernel {
         width: 80%;
         height: 450px;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .low-level {
         width: 80%;
         height: 450px;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .driver {
         width: 80%;
         height: 450px;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .real-time {
         width: 80%;
         height: 450px;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .security {
         width: 80%;
         height: 450px;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .card {
@@ -754,7 +754,8 @@ textarea {
     }
 
     .image {
-        height: 100px;
+        width: 75%;
+        height: 200px;
     }
 
     h1 {
@@ -811,18 +812,17 @@ textarea {
     }
 
     nav a {
-        list-style: none;
         color: darkblue;
-        background-color: #39FF14;
+        background-color: transparent;
         border: 1px solid transparent;
-        font-size: 15px;
+        font-size: 14px;
         cursor: pointer;
 
     }
 
     nav a:hover {
         transform: scale(1);
-        background-color: skyblue;
+        color: gold;
 
 
     }
@@ -834,7 +834,7 @@ textarea {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 10px;
+        gap: 5px;
         align-self: center;
     }
 
@@ -901,7 +901,7 @@ textarea {
     }
 
     .performance {
-        font-size: 15px;
+        font-size: 14px;
         height: 500px;
         width: 60%;
     }
@@ -911,7 +911,7 @@ textarea {
     }
 
     .optimization {
-        font-size: 15px;
+        font-size: 14px;
         height: 500px;
         width: 60%;
     }
@@ -1011,6 +1011,7 @@ textarea {
 
     h1 {
         font-size: 1em;
+        text-align: center;
     }
 
     .lif {
@@ -1088,7 +1089,7 @@ textarea {
     }
 
     .image {
-        height: 250px;
+        height: 500px;
         width: 60%;
     }
 

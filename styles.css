@@ -770,7 +770,7 @@ textarea {
         position: absolute;
     }
 
-    nav {
+    /*nav {
         height: 5vh;
         border-radius: 5px;
     }
@@ -791,6 +791,40 @@ textarea {
         align-items: center;
         gap: 0.05%;
     }
+        */
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav a {
+        list-style: none;
+        color: darkblue;
+        background-color: transparent;
+        border: 1px solid transparent;
+        font-size: 15px;
+
+    }
+
+    nav a:hover {
+        transform: scale(1);
+        background-color: skyblue;
+
+    }
+
+    .link {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        align-self: center;
+    }
+
 }
 
 
@@ -923,15 +957,22 @@ textarea {
         opacity: 0;
     }
 
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
     .link {
+        width: 50%;
+        height: 100%;
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: center;
         gap: 10px;
         align-self: center;
-        margin-right: 5%;
-        margin-left: 1%;
-
     }
 }
 

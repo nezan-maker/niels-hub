@@ -74,14 +74,15 @@ h1 {
 
 }
 
-.card:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.286);
-}
-
 .card.show {
     opacity: 1;
     transform: translateX(0);
+}
+
+.card.show:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.286);
+
 }
 
 .card1 {
@@ -102,14 +103,15 @@ h1 {
     transform: translateX(-50%);
 }
 
-.card1:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.286);
-}
-
 .card1.show {
     opacity: 1;
     transform: translateX(0);
+}
+
+.card1.show:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.286);
+
 }
 
 .card2 {
@@ -292,14 +294,6 @@ h2 {
     text-align: justify;
 }
 
-.performance:hover {
-    transform: scale(1.02);
-    background-color: rgba(0, 0, 0, 0.284);
-    color: skyblue;
-    border: 3px solid rgba(0, 0, 0, 0.015);
-
-}
-
 .optimization {
     display: flex;
     flex-direction: column;
@@ -350,9 +344,25 @@ h2 {
 
 }
 
+.performance.show:hover {
+    transform: scale(1.02);
+    background-color: rgba(0, 0, 0, 0.284);
+    color: skyblue;
+    border: 3px solid rgba(0, 0, 0, 0.015);
+
+}
+
 .optimization.show {
     opacity: 1;
     transform: translateX(0);
+}
+
+.optimization.show:hover {
+    transform: scale(1.02);
+    background-color: rgba(0, 0, 0, 0.284);
+    color: skyblue;
+    border: 3px solid rgba(0, 0, 0, 0.015);
+
 }
 
 .kernel {
@@ -377,18 +387,17 @@ h2 {
     text-align: justify;
 }
 
-.kernel:hover {
+.kernel.show {
+    opacity: 1;
+    transform: translateX(0);
+}
 
+.kernel.show:hover {
     transform: scale(1.02);
     background-color: rgba(0, 0, 0, 0.284);
     color: skyblue;
     border: 3px solid rgba(0, 0, 0, 0.015);
 
-}
-
-.kernel.show {
-    opacity: 1;
-    transform: translateX(0);
 }
 
 
@@ -417,18 +426,18 @@ h2 {
     text-align: justify;
 }
 
-.low-level:hover {
+.low-level.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.low-level.show:hover {
 
     transform: scale(1.02);
     background-color: rgba(0, 0, 0, 0.284);
     color: skyblue;
     border: 3px solid rgba(0, 0, 0, 0.015);
 
-}
-
-.low-level.show {
-    opacity: 1;
-    transform: translateX(0);
 }
 
 .driver {
@@ -455,18 +464,18 @@ h2 {
     text-align: justify;
 }
 
-.driver:hover {
+.driver.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.driver.show:hover {
 
     transform: scale(1.02);
     background-color: rgba(0, 0, 0, 0.284);
     color: skyblue;
     border: 3px solid rgba(0, 0, 0, 0.015);
 
-}
-
-.driver.show {
-    opacity: 1;
-    transform: translateX(0);
 }
 
 .real-time {
@@ -492,18 +501,18 @@ h2 {
     text-align: justify;
 }
 
-.real-time:hover {
+.real-time.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.real-time.show:hover {
 
     transform: scale(1.02);
     background-color: rgba(0, 0, 0, 0.284);
     color: skyblue;
     border: 3px solid rgba(0, 0, 0, 0.015);
 
-}
-
-.real-time.show {
-    opacity: 1;
-    transform: translateX(0);
 }
 
 .security {
@@ -530,7 +539,13 @@ h2 {
     text-align: justify;
 }
 
-.security:hover {
+.security.show {
+
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.security.show:hover {
 
     transform: scale(1.02);
     background-color: rgba(0, 0, 0, 0.284);
@@ -539,11 +554,7 @@ h2 {
 
 }
 
-.security.show {
 
-    opacity: 1;
-    transform: translateY(0);
-}
 
 
 html {
@@ -802,15 +813,17 @@ textarea {
     nav a {
         list-style: none;
         color: darkblue;
-        background-color: transparent;
+        background-color: #39FF14;
         border: 1px solid transparent;
         font-size: 15px;
+        cursor: pointer;
 
     }
 
     nav a:hover {
         transform: scale(1);
         background-color: skyblue;
+
 
     }
 
@@ -1064,7 +1077,7 @@ textarea {
     nav a {
         list-style: none;
         color: darkblue;
-        background-color: transparent;
+        background-color: #39FF14;
         border: 1px solid transparent;
     }
 
@@ -1108,7 +1121,7 @@ textarea {
     nav a {
         list-style: none;
         color: darkblue;
-        background-color: transparent;
+        background-color: #39FF14;
         border: 1px solid transparent;
     }
 

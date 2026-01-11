@@ -49,11 +49,6 @@ h1 {
     transform: translateX(0)scale(1);
 }
 
-.image.show:hover {
-    transform: translateX(0)scale(1.02);
-    box-shadow: 0 0 5px 5px skyblue;
-}
-
 .card {
     display: flex;
     flex-direction: column;

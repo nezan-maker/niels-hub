@@ -80,6 +80,43 @@ a {
 h1 {
     transition: all 1s ease;
 }
+#responseMessage {
+  position: fixed;       
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 400px;
+  padding: 20px 25px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;  
+  transition: all 0.5s ease;
+}
+
+
+#responseMessage.success {
+  background: linear-gradient(135deg, #4caf50, #81c784);
+  border: 2px solid #388e3c;
+}
+
+
+#responseMessage.error {
+  background: linear-gradient(135deg, #f44336, #e57373);
+  border: 2px solid #d32f2f;
+}
+
+
+#responseMessage.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
 
 @media (max-width:700px) {
     .last {

@@ -142,7 +142,7 @@ h1 {
 .caption {
     text-align: justify;
     background: linear-gradient(to right, white, rgb(3, 171, 238));
-    -webkit-text-fill-color: transparent;
+    color: transparent;
     background-clip: text;
     animation: anime 800ms linear infinite;
 }
@@ -228,7 +228,7 @@ nav a:hover {
 .log p {
     font-family: "BBH Hegarty", sans-serif;
     background: linear-gradient(to right, gold, #39FF14);
-    -webkit-text-fill-color: transparent;
+    color: transparent;
     background-clip: text;
     text-decoration: line-through;
     background-size: 200% 200%;

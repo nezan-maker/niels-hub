@@ -1,0 +1,54 @@
+<svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Glow effect -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+
+    <!-- Animated stroke -->
+    <style>
+      .circuit {
+        fill: none;
+        stroke: #39ff14;
+        stroke-width: 2;
+        opacity: 0.35;
+        filter: url(#glow);
+        stroke-dasharray: 6 10;
+        animation: flow 6s linear infinite;
+      }
+
+      @keyframes flow {
+        from {
+          stroke-dashoffset: 0;
+        }
+        to {
+          stroke-dashoffset: -100;
+        }
+      }
+    </style>
+  </defs>
+
+  <!-- Vertical lines -->
+  <path class="circuit" d="M100 0 V600"></path>
+  <path class="circuit" d="M300 0 V600"></path>
+  <path class="circuit" d="M500 0 V600"></path>
+
+  <!-- Horizontal lines -->
+  <path class="circuit" d="M0 150 H600"></path>
+  <path class="circuit" d="M0 300 H600"></path>
+  <path class="circuit" d="M0 450 H600"></path>
+
+  <!-- Circuit branches -->
+  <path class="circuit" d="M100 150 H200 V300"></path>
+  <path class="circuit" d="M300 300 H420 V450"></path>
+  <path class="circuit" d="M500 150 H380 V300"></path>
+
+  <!-- Nodes -->
+  <circle cx="100" cy="150" r="4" fill="#39ff14" opacity="0.5"></circle>
+  <circle cx="300" cy="300" r="4" fill="#39ff14" opacity="0.5"></circle>
+  <circle cx="500" cy="450" r="4" fill="#39ff14" opacity="0.5"></circle>
+</svg>
